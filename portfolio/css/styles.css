@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0; /*margen o distancia entre los cuadros*/
+  padding: 0; /*la distancia entre el contenido y sus bordes*/
+  box-sizing: border-box; /* box sizing elige el formato en el que funcionan los 
+  modelos de caja y border-box hace que se ajusten entre si*/
+}
+/*define la tipografia del body del html */
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden; /*?*/
+}
+.login {
+  background-color: lightcoral;
+  border:none;
+  border-radius:20px; ;
+  padding: 3px 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 12px -5px rgba(240, 128, 128, .69);
+}
+.wrapper {
+  width: 100vw; /* la cantidad de ancho que ocupa el elemento*/
+  height: 100vh;/*la cantidad de alto que ocupa el elemento*/
+  background-color: #191c32;/*color de fondo (dependiente del width u height)*/
+  color: aliceblue; /*aplica color al contenido*/
+}
+.wrapper img{
+  width: 100%;
+  height:500px;
+  display: flex;
+  border-radius: 30px;
+}
+.navbar{
+  display: flex; /*Define tipo de visualizacion de un elemento*/
+  justify-content: space-between;/*el tipo de separacion entre elementos flex*/
+  padding: 1em; /* el espacio de relleno al rededor de los elementos*/
+}
+.brand span  {
+  color: lightpink;
+}
+.menu {
+  padding: 5px;
+  margin-right:30px;
+  display: flex;
+  width: 10%;
+  align-items: flex-start;
+}
+.menu li{
+  list-style: none;/*modifica el parametro de las listas*/
+}
+.menu a {
+  color: aliceblue;
+  text-decoration: none; 
+  padding: 10px 20px;/*primer valor arriba, segundo derecha, tercero abajo,
+  cuarto izquierdo*/
+}
+.menu .active{
+  color: lightcoral ;
+}
+.menu a:hover/*le agrega color al pasar el puntero encima*/{
+  color: lightcoral;
+  transition: ease-in .35S;
+}
+.portfolio{
+  width: 100vw;
+  background-color: #191c32;
+}
+.main{
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+h1{
+  font-size: 3em;
+}
+span{
+  color: lightpink;
+}
+.download-cv{
+  padding: 10px 20px;
+  background-color: lightcoral;
+  border: none;
+  border-radius: 30px;
+  margin: 15px;
+  cursor:pointer;
+  box-shadow: 1px 3px 15px -5px rgba(240, 128, 128, .69);
+}
+
+.download-cv:hover, .login:hover{
+  background-color:#fff;
+  box-shadow: none;
+  transition: ease-in .35S;
+}
+.main img{
+  width: 350px;
+  border: 10px solid lightpink;
+}
+
+.about{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+}
+
+.about img{
+  width: 100%;
+  grid-column:1/5 ;
+}
+
+.about-info{
+  grid-column: 5/10;
+  padding: 40px;
+}
+
+.about-info h2{
+  font-size: 30px;
+  color: #191c32;
+}
+
+.divider{
+  height: 4px;
+  width: 80px;
+  background-color: lightcoral;
+  margin-top: 2px;
+  margin-bottom: 40px;
+}
+
+.about p{
+  margin-bottom: 15px;
+  color: lightcoral;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.portfolio-headings{
+  width:100vw;
+  padding: 100px;
+}
+.portfolio-headings h2{
+  font-size: 50px;
+}
+.portfolio .container{
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background-color:rgb(18, 17, 112);
+  color: #fff;
+  height: 400px;
+}
+
+.card-image{
+  width: 100%;
+  height: 150px;
+  background-image: url(../img/2-original.png);
+  background-size: cover;
+}
+
+.card-title{
+  padding: 20px; 
+}
+
+.card-project-links{
+display: flex;
+justify-content: space-evenly;
+}
+
+.card-project-links a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.card-project-links i {
+  font-size: 30px;
+}
+
+.card .project-details{
+  margin: 0 auto;
+  margin: 20px; 
+  width: 70%;
+}
+
+.card .project-details a{
+  text-decoration: none;
+  color: #191c32;
+}
+
+.project-details-content{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contenedor-de-contacto{
+  padding: 60px;
+  margin: 0 auto;
+}
+
+.contenedor-de-contacto h4{
+  color: #fff;
+}
+
+.contenedor-de-contacto img{
+  width: 750px;
+  height: 700px;
+  bottom: 0px;
+}
+
+.cabezera-de-contacto h2{
+  font-size: 60px;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 40px;
+  align-items: left;
+}
+
+.formulario input{
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.formulario textarea{
+  height: 150px;
+  background: none;
+  color: #fff;
+  padding: 30px;
+  border: #fff 1px solid;
+}
+
+.enviar{
+  padding: 10px 20px;
+  margin: 20px;
+  border: none;
+  text-transform: uppercase;
+  background-color: lightcoral;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 1px 3px 15px -5px rgba(240, 128, 128, .69);
+}
+
+.enviar:hover{
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  background-color: lightcoral;
+}
+
+.footer-content h2{
+  font-size: 60px;
+}
+
+.footer-content h5, .social-network i{
+  font-size: 30px;
+}
+
+.social-network{
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+  margin-top: 20px;
+}
+
+.social-network i:hover{
+  color: #fff;
+}
